@@ -1,3 +1,5 @@
+import firebaseapp from '../../firebase/firebase-config';
+
 export default () => {
   const loginContainer = document.createElement('div');
   const template = `
@@ -21,6 +23,27 @@ export default () => {
 
   const returnBtn = loginContainer.querySelector('#return-btn');
   returnBtn.addEventListener('click', () => window.location.replace('#homepage'));
+  const formLogin = loginContainer.querySelector('.login-form');
+  const emailInput = loginContainer.querySelector('#email-input-login');
+  const passwordInput = loginContainer.querySelector('#password-input-login');
+  formLogin.addEventListener('submit', () => {
+
+    const auth = firebaseapp.auth();
+    auth.createUserWithEmailAndPassword(emailInput.value, passwordInput.value)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user)
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+  })
 
   return loginContainer;
 };
+
+
+
