@@ -5,6 +5,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
+  signOut
 } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 // import { db } from '... firebase-firestore.js'
 
@@ -21,7 +22,11 @@ export function loginWithEmailAndPassword(email, password) {
 }
 
 export function loginWithGoogle() {
-  return signInWithPopup(auth, provider)
+  return signInWithPopup(auth, provider);
+}
+
+export function logoff(){
+  return signOut(auth);
 }
 // aqui exportaras las funciones que necesites
 
