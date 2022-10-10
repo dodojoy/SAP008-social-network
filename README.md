@@ -3,16 +3,14 @@
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Entrega](#7-entrega)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
+* [1. Resumo do Projeto](#1-resumo-do-projeto)
+* [2. Definição do produto e escolha do tema](#2-definição-do-produto-e-escolha-do-tema)
+* [3. Pesquisa de Usuário e Histórias de Usuários](#3-pesquisa-de-usuário-e-histórias-de-usuários)
+* [4. Prototipação e testes de usabilidade](#4-prototipação-e-testes-de-usabilidade)
+* [5. Estrutura e funcionalidades da SPA](#5-estrutura-e-funcionalidades-da-SPA)
+* [6. Testes unitários e Testes assíncronos](#6-testes-unitários-e-assíncronos)
+* [7. Ferramentas e Tech Skills](#7-ferramentas-e-tech-skills)
+* [8. Considerações finais](#8-considerações-finais)
 
 ***
 
@@ -45,7 +43,7 @@ Nossa pesquisa de usuário se deu através da aplicação de um questionário pa
 
 Durante nossas sprints, trabalhamos uma história de usuário por vez, desenvolvendo, implementando e testando as funcionalidades criadas para solucionar os problemas de cada história. Chegamos ao resultado de 4 diferentes histórias de usuários, como observadas a seguir:
 
-[Historias](img/historiasdeusuarios.png)
+[Historias] (img/historiasdeusuarios.png)
 
 ### HISTÓRIA 1: 
 Para a conclusão desta história, nós focamos em implementar as páginas de cadastro e login da página, e criar a lógica de cadastrar e logar com e-mail ou com gmail utilizando o Firebase como autenticador. 
@@ -116,9 +114,9 @@ Página para as usuárias recuperarem acesso a suas contas caso esqueçam a senh
 ### FEED
 Página na qual nossas usuárias poderão publicar posts, categorizar seus posts para serem exibidos conforme a categoria selecionada, editar e deletar os próprios posts, além de dar like em e pesquisar por posts de outras usuárias, e exibir apenas posts que correspondam a determinada categoria, através de um sistema de filtros. 
 
-## 6. Testes unitários e assíncronos
+## 6. Testes unitários e Testes assíncronos
 
-## 7. Ferramentas Utilizadas e Tech Skills
+## 7. Ferramentas e Tech Skills
 
 - Figma;
 - Notion;
