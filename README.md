@@ -39,23 +39,23 @@ Rebu surgiu como uma forma criativa e tecnológica de solucionar o problema que 
 
 ## 3. Pesquisa de Usuário e Histórias de Usuários
 
-Nossa pesquisa de usuário se deu através da aplicação de um questionário para um grupo de 20 mulheres lésbicas. Buscamos entender a viabilidade da nossa proposta para nosso público; com quais termos elas se sentiam confortáveis; e quais funcionalidades elas julgavam ser importante em uma rede social deste tipo. Os resultados obtidos inspiraram a criação de nossas histórias de usuários.
+Nossa pesquisa de usuário se deu através da aplicação de um questionário para um grupo de 20 mulheres lésbicas. Buscamos entender a viabilidade da nossa proposta para nosso público; com quais termos elas se sentiam confortáveis; e quais funcionalidades elas julgavam ser importantes em uma rede social deste tipo. Os resultados obtidos inspiraram a criação de nossas histórias de usuários.
 
 Durante nossas sprints, trabalhamos uma história de usuário por vez, desenvolvendo, implementando e testando as funcionalidades criadas para solucionar os problemas de cada história. Chegamos ao resultado de 4 diferentes histórias de usuários, como observadas a seguir:
 
 ![Histórias-de-usuários](./src/img/historiasdeusuarios.png)
 
 ### HISTÓRIA 1: 
-Para a conclusão desta história, nós focamos em implementar as páginas de cadastro e login da página, e criar a lógica de cadastrar e logar com e-mail ou com gmail utilizando o Firebase como autenticador. 
+Para a conclusão desta história, focamos em implementar as páginas de cadastro e login da página, e criar a lógica de cadastrar e logar com e-mail ou com gmail utilizando o Firebase como autenticador. 
  
 ### HISTÓRIA 2: 
-Para atender à segunda história, criamos uma página de redefinição de senha e a lógica para recebimento de e-mail de redefinição de senha, utilizamos o Firebase. Além disso, trabalhamos na construção da lógica para validação dos inputs dos formulários e para tratar os erros do Firebase, transformando-os em uma mensagem user friendly que também é exibida na tela em formato de aviso. 
+Para atender à segunda história, criamos uma página de redefinição de senha e a lógica para recebimento de e-mail de redefinição de senha - utilizamos o Firebase. Além disso, trabalhamos na construção da lógica para validação dos inputs dos formulários e para tratar os erros do Firebase, transformando-os em mensagens user friendly que também são exibidas na tela em formato de aviso. 
 
 ### HISTÓRIA 3: 
 Conforme a demanda desta história, trabalhamos na implementação das funcionalidades de criar, editar, deletar e curtir posts.
 
 ### HISTÓRIA 4: 
-Incluímos a possibilidade de a usuária pesquisar posts através de uma search bar, além de categorizar as próprias postagens conforme determinados interesses, e de filtrar as postagens exibidas no feed conforme os dados interesses. 
+Incluímos a possibilidade de a usuária pesquisar por posts através de uma search bar, além de categorizar as próprias postagens conforme determinados interesses, e de filtrar as postagens exibidas no feed conforme os dados interesses. 
 
 * **Critérios de aceitação:** tudo o que deve acontecer para satisfazer as
   necessidades do usuário.
