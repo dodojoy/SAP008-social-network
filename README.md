@@ -1,4 +1,4 @@
-![Rebulogogithub](img/rebulogogif.gif)
+![Rebulogogithub](./src/img/rebulogogif.gif)
 # Rede social feita por mulheres, para mulheres.
 
 ## Índice
