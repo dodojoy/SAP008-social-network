@@ -43,7 +43,7 @@ Nossa pesquisa de usuário se deu através da aplicação de um questionário pa
 
 Durante nossas sprints, trabalhamos uma história de usuário por vez, desenvolvendo, implementando e testando as funcionalidades criadas para solucionar os problemas de cada história. Chegamos ao resultado de 4 diferentes histórias de usuários, como observadas a seguir:
 
-[Historias] (img/historiasdeusuarios.png)
+![Histórias-de-usuários](./src/img/historiasdeusuarios.png)
 
 ### HISTÓRIA 1: 
 Para a conclusão desta história, nós focamos em implementar as páginas de cadastro e login da página, e criar a lógica de cadastrar e logar com e-mail ou com gmail utilizando o Firebase como autenticador. 
@@ -82,14 +82,13 @@ Utilizamos o Figma para o processo de prototipação. Utilizando o conceito resp
 Nossos protótipos são de alta fidelidade e navegáveis, para telas:
 
  ### Mobile:
- [prototipomobile](img/prototipomobile.png)
+ ![prototipomobile](./src/img/prototipomobile.png)
 
  ### Desktop:
- [prototipodesktop](img/prototipodesktop.png)
+ ![prototipodesktop](./src/img/prototipodesktop.png)
 
  ### Tablet:
- [prototipotablet](img/prototipotablet.png)
-
+ ![prototipotablet](./src/img/prototipotablet.png)
 
 Após a implementação navegável, aplicamos nossos testes de usabilidade, que foram......
 
