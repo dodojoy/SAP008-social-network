@@ -81,13 +81,13 @@ Utilizamos o Figma para o processo de prototipação. Utilizando o conceito resp
 
 Nossos protótipos são de alta fidelidade e navegáveis, para telas:
 
- ### Mobile:
+ ### MOBILE:
  ![prototipomobile](./src/img/prototipomobile.png)
 
- ### Desktop:
+ ### DESKTOP:
  ![prototipodesktop](./src/img/prototipodesktop.png)
 
- ### Tablet:
+ ### TABLET:
  ![prototipotablet](./src/img/prototipotablet.png)
 
 Após a implementação navegável, aplicamos nossos testes de usabilidade, que foram......
@@ -98,19 +98,19 @@ Pensamos nos protótipos com base nas histórias de usuário...
 
 A aplicação foi desenvolvida como uma Single Page Application (SPA), utilizando routing em hashtags. Sendo assim, foi dividida nas seções:
 
-### PÁGINA INICIAL
+***#Homepage*** - PÁGINA INICIAL:
 É a página principal do site, através da qual as usuárias iniciam navegação, podendo ser direcionadas a outras seções da aplicação (as páginas de about, login e cadastro).
 
-### ABOUT
+***#About*** - SOBRE REBU:
 Página que contextualiza a rede social, explicando sua definição e proposta.
 
-### LOGIN E CADASTRO
+***#Login e #Register*** - ENTRAR E CADASTRAR:
 Nossas usuárias podem se cadastrar e entrar utilizando o método de login do Google, ou utilizando e-mail e senha. As usuárias recebem mensagens de apoio para realizar a etapa de registro e login, com validação de form.
 
-### REDEFINIÇÃO DE SENHA
+***#reset-password*** - REDEFINIÇÃO DE SENHA:
 Página para as usuárias recuperarem acesso a suas contas caso esqueçam a senha - após preencher o form sinalizando o e-mail cadastrado, elas recebem um e-mail com link para redefinir a senha. 
 
-### FEED
+***#feed*** - FEED:
 Página na qual nossas usuárias poderão publicar posts, categorizar seus posts para serem exibidos conforme a categoria selecionada, editar e deletar os próprios posts, além de dar like em e pesquisar por posts de outras usuárias, e exibir apenas posts que correspondam a determinada categoria, através de um sistema de filtros. 
 
 ## 6. Testes unitários e Testes assíncronos
