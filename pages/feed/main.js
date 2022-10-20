@@ -1,14 +1,16 @@
-import { getAuth } from '../../lib/firebase.js';
+import { getAuth } from '../../lib/exports.js';
+import { logoff } from '../../lib/firebase-auth.js';
 import {
   createPost,
   deletePost,
   getAllPosts,
-  logoff,
   updatePost,
   like,
-} from '../../lib/index.js';
+} from '../../lib/firebase-firestore.js';
 
 import { app } from '../../lib/configuration.js';
+
+import { handleFirebaseErrors } from '../../lib/validation.js';
 
 const auth = getAuth(app);
 
@@ -169,10 +171,15 @@ export default () => {
         confirmEditBtn.classList.remove('hide');
 
         confirmEditBtn.addEventListener('click', async () => {
-          await updatePost(postToBeEdited, postTxtarea.value);
-          postTxtarea.setAttribute('disabled', '');
-          confirmEditBtn.classList.add('hide');
-          printPosts('allposts');
+          try {
+            await updatePost(postToBeEdited, postTxtarea.value);
+            postTxtarea.setAttribute('disabled', '');
+            confirmEditBtn.classList.add('hide');
+            printPosts('allposts');
+          } catch (error) {
+            nullPostMessage.classList.remove('hide');
+            nullPostMessage.textContent = handleFirebaseErrors(error);
+          }
         });
       });
     });
@@ -195,6 +202,10 @@ export default () => {
         .then(() => {
           toggle();
           window.location.reload();
+        })
+        .catch((error) => {
+          nullPostMessage.classList.remove('hide');
+          nullPostMessage.textContent = handleFirebaseErrors(error);
         });
     });
 
@@ -227,6 +238,10 @@ export default () => {
           nullPostMessage.classList.add('hide');
           postForm.reset();
           printPosts('allposts');
+        })
+        .catch((error) => {
+          nullPostMessage.classList.remove('hide');
+          nullPostMessage.textContent = handleFirebaseErrors(error);
         });
     }
   });

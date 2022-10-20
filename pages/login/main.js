@@ -1,7 +1,7 @@
 import {
   loginWithEmailAndPassword,
   loginWithGoogle,
-} from '../../lib/index.js';
+} from '../../lib/firebase-auth.js';
 
 import {
   handleFirebaseErrors,
@@ -38,7 +38,7 @@ export default () => {
         <p id="firebase-warning-messages" class="form-warning-messages hide"></p>
 
         <a href="#resetPassword" class="password-reset-login">ESQUECEU SUA SENHA? CLIQUE AQUI</a>
-  
+
         <button id="btn-login-page" class="btn-login">ENTRAR</button>
   
         <a href="#register" class="link-text-login">NÃO POSSUI UMA CONTA? CADASTRE-SE!</a>
@@ -60,6 +60,13 @@ export default () => {
 
   returnBtn.addEventListener('click', () => window.history.back());
 
+  function handleErrors(error) {
+    const userFriendlyMessage = handleFirebaseErrors(error.code);
+    firebaseWarningMessages.classList.remove('hide');
+    formValidationMessages.classList.add('hide');
+    firebaseWarningMessages.innerHTML = userFriendlyMessage;
+  }
+
   btnLogin.addEventListener('click', () => {
     const formValidation = validateLoginForm(email.value, password.value);
     if (formValidation) {
@@ -68,14 +75,8 @@ export default () => {
       formValidationMessages.innerHTML = formValidation;
     } else {
       loginWithEmailAndPassword(email.value, password.value)
-        .then(() => {
-          window.location.hash = '#feed';
-        })
         .catch((error) => {
-          const userFriendlyMessage = handleFirebaseErrors(error.code);
-          firebaseWarningMessages.classList.remove('hide');
-          formValidationMessages.classList.add('hide');
-          firebaseWarningMessages.innerHTML = userFriendlyMessage;
+          handleErrors(error);
         });
     }
   });
@@ -84,7 +85,9 @@ export default () => {
 
   googleBtn.addEventListener('click', () => {
     loginWithGoogle()
-      .catch((error) => error);
+      .catch((error) => {
+        handleErrors(error);
+      });
   });
 
   return loginContainer;
