@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     width: 65vw;
 }
 
@@ -60,6 +60,7 @@
     box-shadow: 2px 3px 3px rgba(94, 94, 94, 0.329);
     padding-left: 1rem;
     align-self: flex-start;
+    margin-bottom: 1rem;
 }
 
 .btn-reset {
@@ -75,6 +76,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     align-self: center;
+    text-decoration: none;
 }
 
 .message-about-reset{
