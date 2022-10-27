@@ -3,6 +3,11 @@ html, body {
     padding: 0;
 }
 
+.homepage-content-wrapper {
+    position: absolute;
+    top: 86.8%;
+}
+
 .initial-page {
     width: 100%;
     height: 100vh;
@@ -28,24 +33,22 @@ html, body {
 }
 
 .button-initial-page {
-    width: 100%;
-    height: 11vh;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     background-color: #FFFFFF;
-    position: absolute;
-    top: 80%;
 }
 
 .btn-initial-page {
     border: solid 2px black;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     background-color: #FFFFFF;
     width: 9rem;
-    height: 2.5rem;
     font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 .btn-initial-page:hover {
@@ -80,6 +83,7 @@ footer a {
 }
 
 .developed-by {
+    margin-top: -0.2rem;
     width: 8rem;
 }
 
@@ -114,7 +118,7 @@ footer a {
 
     .btn-initial-page {
         width: 12rem;
-        height: 3.8rem;
+        height: 1.8rem;
         font-size: 1.4rem;
     }
 }
@@ -122,6 +126,16 @@ footer a {
 @media only screen and (min-width: 1024px){
     .intro-text, .video-aside {
         display: block;
+    }
+
+    .homepage-content-wrapper {
+        top: 8%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
     }
 
     .initial-page {
@@ -157,6 +171,7 @@ footer a {
 
     .img-logo {
         width: 14vw;
+        margin-top: 3%;
     }
     
     .vertical-line-text-box {
@@ -188,7 +203,6 @@ footer a {
         gap: 4rem;
         justify-content: space-evenly;
         align-items: flex-start;
-        margin-top: -11vh;
         height: 6vh;
         background: transparent;
     }
@@ -196,9 +210,10 @@ footer a {
     .btn-initial-page {
         background: white;
         width: 10rem;
-        height: 3.5rem;
+        padding: 0.8rem 0;
         font-size: 1.3rem;
         border-radius: 5px;
+        font-weight: lighter;
     }
 
     .footer {
@@ -214,14 +229,14 @@ footer a {
     }
 
     .developed-by {
-        width: 23vw;
+        width: 30vw;
         margin-right: 2rem;
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: #5F5656;
     }
 
     .about {
-        font-size: 0.7rem;
+        font-size: 1rem;
         width: 30vw;
         color: #5F5656;
     }
